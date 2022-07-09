@@ -28,6 +28,8 @@ const postsSlice = createSlice({
 
 export const selectAllPosts = (state) => state.posts;
 
+export const selectFilteredPostsByName = (state, name) => state.posts.filter(post => post.title.toLowerCase().includes(name));
+
 export const { postAdded } = postsSlice.actions
 
 export default postsSlice.reducer
