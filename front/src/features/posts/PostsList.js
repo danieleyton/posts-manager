@@ -17,12 +17,14 @@ const PostsList = () => {
 	<section>
 	    <h2>Posts</h2>
 	    <table>
-	        <tr>
-	            <th>Nombre</th>
-	    	    <th>Descripcion</th>
-	    	    <th>Accion</th>
-	        </tr>
-	        {renderedPosts}
+	        <tbody>
+			<tr>
+			    <th>Nombre</th>
+			    <th>Descripcion</th>
+			    <th>Accion</th>
+			</tr>
+			{renderedPosts}
+	        </tbody>
 	    </table>
 	</section>
     )
